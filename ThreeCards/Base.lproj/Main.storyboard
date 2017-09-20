@@ -25,17 +25,29 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QAf-t1-gwF">
                                 <rect key="frame" x="16" y="75" width="343" height="161"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_spades" translatesAutoresizingMaskIntoConstraints="NO" id="ftb-3b-cte">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_spades" translatesAutoresizingMaskIntoConstraints="NO" id="ftb-3b-cte">
                                         <rect key="frame" x="0.0" y="0.0" width="109" height="161"/>
                                         <color key="backgroundColor" red="0.69802047310000004" green="0.86763445480000001" blue="0.83408332799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xdw-R2-zU1" appends="YES" id="OJm-1o-f6G"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_spades" translatesAutoresizingMaskIntoConstraints="NO" id="Vh5-HV-F8N">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_spades" translatesAutoresizingMaskIntoConstraints="NO" id="Vh5-HV-F8N">
                                         <rect key="frame" x="117" y="0.0" width="109" height="161"/>
                                         <color key="backgroundColor" red="0.69802047310000004" green="0.86763445480000001" blue="0.83408332799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cJ7-8S-Q2d" appends="YES" id="vBI-l4-LLU"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_spades" translatesAutoresizingMaskIntoConstraints="NO" id="qu6-Sy-fmM">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_spades" translatesAutoresizingMaskIntoConstraints="NO" id="qu6-Sy-fmM">
                                         <rect key="frame" x="234" y="0.0" width="109" height="161"/>
                                         <color key="backgroundColor" red="0.69802047310000004" green="0.86763445480000001" blue="0.83408332799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="4C6-l5-nyY" appends="YES" id="vl4-og-2nO"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -47,8 +59,28 @@
                             <constraint firstItem="QAf-t1-gwF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PXV-ga-WKn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstCardImageView" destination="ftb-3b-cte" id="iUi-Ri-qE0"/>
+                        <outlet property="secondCardImageView" destination="Vh5-HV-F8N" id="X2H-ML-G6K"/>
+                        <outlet property="thirdCardImageView" destination="qu6-Sy-fmM" id="Qmu-QI-4Qw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xdw-R2-zU1">
+                    <connections>
+                        <action selector="cardTapped:" destination="BYZ-38-t0r" id="EJI-82-fE3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cJ7-8S-Q2d">
+                    <connections>
+                        <action selector="cardTapped:" destination="BYZ-38-t0r" id="k9x-Mq-4BK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4C6-l5-nyY">
+                    <connections>
+                        <action selector="cardTapped:" destination="BYZ-38-t0r" id="gXT-RL-GqV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
