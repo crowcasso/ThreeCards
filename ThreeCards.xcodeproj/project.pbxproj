@@ -13,6 +13,8 @@
 		297CAB701F72A34800D90F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297CAB6F1F72A34800D90F44 /* Assets.xcassets */; };
 		297CAB731F72A34800D90F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297CAB711F72A34800D90F44 /* LaunchScreen.storyboard */; };
 		2983CFE91F79323500A8B58B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2983CFE81F79323500A8B58B /* Card.swift */; };
+		2983CFEB1F7BCE1D00A8B58B /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2983CFEA1F7BCE1D00A8B58B /* Deck.swift */; };
+		2983CFED1F7BCF4D00A8B58B /* ThreeCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2983CFEC1F7BCF4D00A8B58B /* ThreeCardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		297CAB721F72A34800D90F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297CAB741F72A34800D90F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2983CFE81F79323500A8B58B /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2983CFEA1F7BCE1D00A8B58B /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		2983CFEC1F7BCF4D00A8B58B /* ThreeCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeCardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				297CAB711F72A34800D90F44 /* LaunchScreen.storyboard */,
 				297CAB741F72A34800D90F44 /* Info.plist */,
 				2983CFE81F79323500A8B58B /* Card.swift */,
+				2983CFEA1F7BCE1D00A8B58B /* Deck.swift */,
+				2983CFEC1F7BCF4D00A8B58B /* ThreeCardModel.swift */,
 			);
 			path = ThreeCards;
 			sourceTree = "<group>";
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2983CFEB1F7BCE1D00A8B58B /* Deck.swift in Sources */,
 				297CAB6B1F72A34800D90F44 /* ViewController.swift in Sources */,
 				2983CFE91F79323500A8B58B /* Card.swift in Sources */,
 				297CAB691F72A34800D90F44 /* AppDelegate.swift in Sources */,
+				2983CFED1F7BCF4D00A8B58B /* ThreeCardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

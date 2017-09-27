@@ -10,32 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // View
     @IBOutlet weak var firstCardImageView: UIImageView!
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var thirdCardImageView: UIImageView!
     
+    var imageViews: [UIImageView] = []
+    
+    // Model
+    let threeCardModel = ThreeCardModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        // place the imageviews into an array to mimic the hand of cards
+        imageViews = [firstCardImageView, secondCardImageView, thirdCardImageView]
+        
+        // assign the images from the hand of cards
+        for i in 0..<imageViews.count {
+            imageViews[i].image = threeCardModel.getCardImage(i)
+        }
     }
 
     /* Using a single function for all 3 Tap Gesture Recoginizers */
     @IBAction func cardTapped(_ sender: UITapGestureRecognizer) {
         
         // figure out which UIImageView was tapped
-        let cardImageView = sender.view! as! UIImageView
+        //let cardImageView = sender.view! as! UIImageView
         
-        // flip the card
-        if cardImageView.image == #imageLiteral(resourceName: "ace_of_spades") {
-            cardImageView.image = #imageLiteral(resourceName: "back_of_card")
-        } else {
-            cardImageView.image = #imageLiteral(resourceName: "ace_of_spades")
-        }
         
     }
 

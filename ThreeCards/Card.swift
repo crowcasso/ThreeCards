@@ -11,6 +11,7 @@ import UIKit
 
 class Card {
     
+    //: Properties
     var value: String
     var suit: String
     
@@ -19,7 +20,7 @@ class Card {
         case down
     }
     
-    var state = CardState.down
+    var state = CardState.up
     
     var upImage: UIImage
     var downImage = #imageLiteral(resourceName: "back_of_card")
