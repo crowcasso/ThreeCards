@@ -45,4 +45,13 @@ class Card {
         
         return downImage
     }
+    
+    // flip the card over
+    func flip() {
+        if state == .up {
+            state = .down
+        } else {
+            state = .up
+        }
+    }
 }

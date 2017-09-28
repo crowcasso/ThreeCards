@@ -36,9 +36,19 @@ class ViewController: UIViewController {
     @IBAction func cardTapped(_ sender: UITapGestureRecognizer) {
         
         // figure out which UIImageView was tapped
-        //let cardImageView = sender.view! as! UIImageView
+        let cardImageView = sender.view! as! UIImageView
         
+        // determine which UIImageView was tapped
+        var which = -1
+        for i in 0..<imageViews.count {
+            if imageViews[i] == cardImageView {
+                which = i
+            }
+        }
         
+        // flip the card and update the UI
+        threeCardModel.flipCard(which)
+        imageViews[which].image = threeCardModel.getCardImage(which)
     }
 
 }
